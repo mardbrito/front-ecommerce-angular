@@ -11,7 +11,7 @@ export class ProductItemComponent implements OnInit {
   url : string = "";
 
   @Input()
-  livro!: Book;
+  book!: Book;
 
   constructor() { }
 

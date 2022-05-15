@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-filters',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiltersComponent implements OnInit {
 
-  constructor() { }
+  data1 = 0;
+  data2 = 0;
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private httpService: HttpClient,) { }
+  start(event: any) {
+    this.data1 = event;
+    console.log(this.data1);
+  }
+  end(event: any) {
+    this.data2 = event;
+    console.log(this.data2);
+  }
 
   ngOnInit(): void {
   }
+  
 
 }

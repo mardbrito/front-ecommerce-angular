@@ -5,15 +5,23 @@
     <form>
       <div class="form-group">
         <label for="de">De</label>
-        <input type="number" id="de" class="form-control" />
+        <input type="number" id="de" #startprice class="form-control" (input)="start($event)" />
       </div>
+
 
       <div class="form-group">
         <label for="ate">Até</label>
-        <input type="number" id="ate" class="form-control" />
+        <input type="number" id="ate" #endprice  class="form-control" (input)="end($event)" />
       </div>
       <hr />
-      <button class="card-link">Aplicar filtro</button>
+      
+      <button class="card-link" ng-click="priceFiltering('filter')" value="Filter">Aplicar filtro</button>
     </form>
   </div>
+  
+
+  <!-- <input type="number" min="0" max="500" step="1" #statprice (input)="start($event)" />
+    <input type="number" min="0" max="1000" step="1" #endprice (input)="end($event)" /> -->
+ <div> {{ startprice.value }} </div>
+ <div> {{ endprice.value }}  </div>
 </div>
