@@ -13,14 +13,8 @@ export class ProductItemComponent implements OnInit {
   @Input()
   livro!: Book;
 
-  constructor() {
+  constructor() { }
 
-   }
-
-  ngOnInit(): void {
-
-
-
-  }
+  ngOnInit(): void {  }
 
 }
