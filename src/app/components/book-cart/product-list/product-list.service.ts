@@ -19,6 +19,4 @@ export class BooksService {
     return this.http.get<Book[]>(this.url + 'books');
   }
 
-
-
 }

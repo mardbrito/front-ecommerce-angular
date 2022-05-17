@@ -14,6 +14,7 @@ import { ProductItemComponent } from './components/book-cart/product-list/produc
 import { HttpClientModule } from '@angular/common/http';
 import {BooksService} from './components/book-cart/product-list/product-list.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BookCartComponent,
     ProductListComponent,
     FiltersComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

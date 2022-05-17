@@ -2,7 +2,6 @@
   <img
     src="{{ 'assets/images/' + book.img + '.jpg' }}"
     class="card-img-top books-image"
-    alt="..."
   />
   <div class="card-body">
     <h6 class="card-title">{{ book.name }}</h6>
@@ -11,7 +10,6 @@
     <p class="card-text">Quantidade: {{ book.quantity }}</p>
     <p class="card-text">Valor: {{ book.price | currency: "BRL" }}</p>
 
-    <a href="#" class="card-link">Detalhes</a>
-    <a href="#" class="card-link">Comprar</a>
+     <a href="#" class="btn btn-secondary btn-sm">Comprar</a>
   </div>
 </div>

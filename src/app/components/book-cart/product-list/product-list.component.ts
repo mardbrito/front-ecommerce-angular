@@ -12,6 +12,9 @@ export class ProductListComponent implements OnInit {
   books: Array<Book> = [];
   booksService: BooksService;
 
+  filterMinPrice: number = 0;
+  filterMaxPrice: number = 0;
+
   constructor(booksService: BooksService) {
     this.booksService = booksService;
   }
@@ -25,7 +28,4 @@ export class ProductListComponent implements OnInit {
       this.books = response;
     })
   }
-
-  
-
 }
